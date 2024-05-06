@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="source/style/mycss.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="source/files/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="source/files/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="source/files/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="source/files/favicon_io/site.webmanifest">
+  <title>Велосипеды</title>
+</head>
+
+<body>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="index.html">Главная</a>
+    <a href="okompanii.html">Компания</a>
+    <a href="galary.html">Галерея</a>
+    <a href="otzivi.html">Отзывы</a>
+    <a href="contacts.html">Контакты</a>
+  </div>
+
+  <div id="main">
+    <!-- Главная страница -->
+    <div class="header_section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4">            
+          </div>
+
+          <div class="col-sm-4">
+            <div class="name">
+              <img src="source/files/название.png" alt="name">
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="elements_3">
+              <div class="levii">
+
+                <button onclick="document.getElementById('id01').style.display='block'" class="login">Войти</button>
+
+                <div id="id01" class="modal">
+
+                  <form class="modal-content animate" action="/action_page.php">
+
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                      title="Close Modal">×</span>
+
+
+                    <div class="container">
+
+                      <label for="uname" class="username"><b>Логин</b></label>
+                      <input type="text" placeholder="Введите логин" name="uname" required>
+
+                      <label for="psw" class="username"><b>Пароль</b></label>
+                      <input type="password" placeholder="Введите пароль" name="psw" required>
+
+                      <button type="submit" class="login1">Войти</button>
+                      <label class="remember">
+                        <input type="checkbox" checked="checked" name="remember"> Запомнить
+                      </label>
+                    </div>
+
+                    <div class="container_niz" style="background-color:#f1f1f1">
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">Отмена</button>
+                      <span class="psw">Забыли <a href="#">пароль?</a></span>
+                    </div>
+                  </form>
+                </div>
+
+
+
+              </div>
+
+              <div class="srednii">
+                <button onclick="document.getElementById('id02').style.display='block'"
+                  class="registration">Регистрация</button>
+
+                <div id="id02" class="modal2">
+                  <span onclick="document.getElementById('id02').style.display='none'" class="close2"
+                    title="Close Modal">×</span>
+                  <form class="modal-content2 animate" action="/action_page.php">
+                    <div class="container">
+                      <h1>Регистрация</h1>
+                      <p>Пожалуйста, заполните эту форму, чтобы создать учетную запись.</p>
+                      <hr>
+                      <label for="email"><b>Логин</b></label>
+                      <input type="text2" placeholder="Введите логин" name="email" required>
+
+                      <label for="psw"><b>Пароль</b></label>
+                      <input type="password2" placeholder="Введите пароль" name="psw" required>
+
+                      <label for="psw-repeat"><b>Повторить Пароль</b></label>
+                      <input type="password2" placeholder="Повторить пароль" name="psw-repeat" required>
+
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить
+                      </label>
+
+                      <p>Создавая учетную запись, Вы соглашаетесь с нашими <a href="#"
+                          style="color:dodgerblue">Условиями и Конфиденциальностью</a>.</p>
+
+                      <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('id02').style.display='none'"
+                          class="cancelbtn2">Отмена</button>
+                        <button type="submit" class="signupbtn">Регистрация</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+              </div>
+
+              <div class="pravii">
+                <div class="knopka">
+                  <span style="cursor: pointer; " onclick="openNav()"><img src="source/files/burger.png"
+                      alt="burger"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banrs">
+
+        <div class="container">
+          <div class="row">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="d-block w-100">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 text-banner">
+                        <div class="zagolovok">
+                          <h1 class="zagolovok-text">
+                            <strong>
+                              Горный <br>
+                              <span style="color: white;">Велосипед</span>
+                            </strong>
+                          </h1>
+                        </div>
+                        <p class="text_bnr">Хардтейлы - горные велосипеды, не имеющие заднего амортизатора. Прямой
+                          перевод – «жесткий хвост». Хардтейлы имеют самое широкое применение: от прогулок по
+                          пересеченной местности до соревнований по дисциплинам кантри-кросс, байк-кросс, слалом, триал,
+                          стрит.</p>
+                        <a class="kupit_bnr" href="contacts.html">Купить сейчас</a>
+                        <a class="contacts_bnr" href="#colontitul_text_iak">Контакты</a>
+                      </div>
+
+                      <div class="col-lg-6 col-md-6">
+                        <img src="source/files/cycle.png" width="93.2%" alt="...">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="d-block w-100">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 text-banner">
+                        <div class="zagolovok">
+                          <h1 class="zagolovok-text">
+                            <strong>
+                              Спортивный <br>
+                              <span style="color: white;">Велосипед</span>
+                            </strong>
+                          </h1>
+                        </div>
+                        <p class="text_bnr">Такие модели делают максимально легкими, в том числе за счет отсутствия
+                          любых деталей, ненужных для езды и управления, и тонкой рамы из специальных легких сплавов. Их
+                          стихия – скоростные велогонки на большие расстояния по хорошему асфальту.</p>
+                        <a class="kupit_bnr" href="contacts.html">Купить сейчас</a>
+                        <a class="contacts_bnr" href="#colontitul_text_iak">Контакты</a>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                        <img src="source/files/cycle2.png" width="90%" alt="...">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="d-block w-100">
+                    <div class="row">
+                      <div class="col-md-6 col-md-6 text-banner">
+                        <div class="zagolovok">
+                          <h1 class="zagolovok-text">
+                            <strong>
+                              Городской <br>
+                              <span style="color: white;">Велосипед</span>
+                            </strong>
+                          </h1>
+                        </div>
+                        <p class="text_bnr">Максимально простые и комфортные модели, самые распространенные среди
+                          велосипедистов, не выезжающих за пределы населенного пункта. Обычно на них используется
+                          стальная рама типа ригид или хардтейл, простая или недорогая с небольшим количеством передач.
+                        </p>
+                        <a class="kupit_bnr" href="contacts.html">Купить сейчас</a>
+                        <a class="contacts_bnr" href="#colontitul_text_iak">Контакты</a>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                        <img src="source/files/cycle3.png" width="77.6%" alt="...">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Главная страница конец блока -->
+
+  <!-- О компании -->
+  <div class="container-fluid">
+    <div class="o_companii_section">
+      <div class="container">
+        <div class="o_companii_img">
+          <img src="source/files/o company.png" alt="...">
+        </div>
+        <h2 class="o_companii_zagolovok">
+          <strong>
+            "О
+            <span style="color: #737473e6;">Компании"</span>
+          </strong>
+        </h2>
+        <div class="o_companii_srednii">
+          <p class="o_companii_text">Компания Velosport считается крупнейшим в мире производителем велосипедов, она
+            существует с 1953 года, что означает, что у нее большой опыт в производстве данных средств передвижения.
+            Действительно, Velosport – настолько крупная компания, что ее производственные мощности расположены по
+            всему миру. В 2009 году сообщалось, что компания открыла 19 000 торговых точек в 60 странах по всему миру.
+            Она настолько велика, что даже спонсирует велосипедные команды и отдельных спортсменов.
+            Когда речь идет о профессиональном велоспорте, Velosport входит в число наиболее предпочитаемых брендов в
+            мире. Velosport также производит велосипеды для всех категорий, от горных до дорожных, в различных ценовых
+            диапазонах. Компания также занимается производством аксессуаров для велосипедов таких, как шлемы, педали и
+            многое другое.
+            <!-- Один из вкладов Velosport в велосипедную индустрию – первый велосипед с карбоновой рамой
+            и резиновыми шинами. Наиболее значительной особенностью Velosport является подвеска. Она с
+            легкостью преодолевает неровности чрезвычайно пересеченной местности и обеспечивает лучшую тягу и контроль
+            при подъемах. Длинная рама и длина руля являются стандартными, что, наряду с узкой передней и свободной
+            задней частью, позволяет сбалансировать вес велосипедиста. Такая геометрия очень важна для лучшего
+            сцепления на спусках и полного контроля на поворотах. -->
+          </p>
+        </div>
+        <div class="knopka_chb">
+          <a class="chitat_bolshe" href="okompanii.html">Читать больше >>></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- О компании конец блока -->
+
+  <!-- Наши велосипеды -->
+  <div class="nashi">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="nash_zagolovok">
+            <strong>
+              Наши
+              <span style="color: #737473e6;"> Велосипеды</span>
+            </strong>
+          </h1>
+          <p class="nash_text">У нас каждый посетитель сможет выбрать велосипед в соответствии со своим
+            ростом, весом, цветовыми и техническими предпочтениями. Мы предлагаем широкий выбор велосипедов для разных
+            людей и разных стилей катания.</p>
+        </div>
+      </div>
+    </div>
+    <div class="nashi2">
+      <div class="nashi_main">
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="source/files/karusel2/karusel1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="source/files/karusel2/karusel2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="source/files/karusel2/karusel3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="source/files/karusel2/karusel4.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="source/files/karusel2/karusel5.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="source/files/karusel2/karusel6.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="source/files/karusel2/karusel7.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="source/files/karusel2/karusel8.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="source/files/karusel2/karusel9.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="source/files/karusel2/karusel10.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="source/files/karusel2/karusel11.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev ukazateli_left" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next ukazateli_right" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
+      <div class="knopka_ub">
+        <a class="uznat_bolshe" href="okompanii.html">Узнать больше >>></a>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- Наши велосипеды конец блока -->
+
+  <!-- Контакты -->
+  <div class="contacts_section">
+    <div class="container">
+      <h1 class="contact_text">
+        <strong>Связаться с нами</strong>
+      </h1>
+    </div>
+    <div class="contacts_main">
+      <div class="vvod_section">
+        <div class="email_box">
+          <div class="input_main">
+
+            <div class="container">
+              <form action="action_page.php">
+
+                <div class="form-group">
+                  <input type="text" class="email_pismo" name="name" placeholder="Имя">
+                </div>
+
+                <div class="form-group">
+                  <input type="text" class="email_pismo" name="name" placeholder="Email">
+                </div>
+
+                <div class="form-group">
+                  <input type="text" class="email_pismo" name="telefone" placeholder="Телефон">
+                </div>
+
+                <div class="form-group">
+                  <textarea class="message_pismo" name="message" placeholder="Напишите.." rows="5"
+                    id="comment"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="send_pismo">
+              <button type="button" class="main_pismo">
+                <a href="#">Отправить</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+  <!-- Контакты конец блока -->
+
+  <!-- Отзывы -->
+  <div class="otzivi">
+    <div class="container">
+      <h1 class="zagolovok_otzivi">
+        <strong>Отзывы</strong>
+      </h1>
+    </div>
+    <div class="otzivi_karusel">
+      <div class="container">
+
+        <div class="row">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <div class="d-block w-100">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-4 text_karusel">
+                      <div class="zagolovok_karusel">
+                        <div class="otzivi_kartinka">
+                          <img src="source/files/отзывы/аватар м.png" alt="">
+                        </div>
+                        <h2 class="zagolovok_karusel2">
+                          <strong>Alex</strong>
+                        </h2>
+                      </div>
+                      <p class="text_karusel2"> Замечательные велосипеды, пользуюсь уже 10 лет, безупречное качество</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                      <div class="zagolovok_karusel">
+                        <div class="otzivi_kartinka">
+                          <img src="source/files/отзывы/аватар ж.png" alt="">
+                        </div>
+                        <h2 class="zagolovok_karusel2">
+                          <strong>Jesica</strong>
+                        </h2>
+                      </div>
+                      <p class="text_karusel2"> Делаю покупки, только в этом магазине</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 text_karusel">
+                      <div class="zagolovok_karusel">
+                        <div class="otzivi_kartinka">
+                          <img src="source/files/отзывы/аватар ж.png" alt="">
+                        </div>
+                        <h2 class="zagolovok_karusel2">
+                          <strong>Mary</strong>
+                        </h2>
+                      </div>
+                      <p class="text_karusel2"> Всегда приветливые и жизнерадостные люди, в этом прекрасном магазине</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item ">
+                <div class="d-block w-100">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-4 text_karusel">
+                      <div class="zagolovok_karusel">
+                        <div class="otzivi_kartinka">
+                          <img src="source/files/отзывы/аватар м.png" alt="">
+                        </div>
+                        <h2 class="zagolovok_karusel2">
+                          <strong>Michle</strong>
+                        </h2>
+                      </div>
+                      <p class="text_karusel2"> Отличное качество, приемлемые цены</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                      <div class="zagolovok_karusel">
+                        <div class="otzivi_kartinka">
+                          <img src="source/files/отзывы/аватар ж.png" alt="">
+                        </div>
+                        <h2 class="zagolovok_karusel2">
+                          <strong>Rebeca</strong>
+                        </h2>
+                      </div>
+                      <p class="text_karusel2">Большой выбор ассортиментов</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 text_karusel">
+                      <div class="zagolovok_karusel">
+                        <div class="otzivi_kartinka">
+                          <img src="source/files/отзывы/аватар м.png" alt="">
+                        </div>
+                        <h2 class="zagolovok_karusel2">
+                          <strong>Jason</strong>
+                        </h2>
+                      </div>
+                      <p class="text_karusel2"> Всё нравится, отличный магазин</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item ">
+                <div class="d-block w-100">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-4 text_karusel">
+                      <div class="zagolovok_karusel">
+                        <div class="otzivi_kartinka">
+                          <img src="source/files/отзывы/аватар ж.png" alt="">
+                        </div>
+                        <h2 class="zagolovok_karusel2">
+                          <strong>Jenifer</strong>
+                        </h2>
+                      </div>
+                      <p class="text_karusel2">Всегда всё в наличии и отличные цены</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                      <div class="zagolovok_karusel">
+                        <div class="otzivi_kartinka">
+                          <img src="source/files/отзывы/аватар м.png" alt="">
+                        </div>
+                        <h2 class="zagolovok_karusel2">
+                          <strong>Richard</strong>
+                        </h2>
+                      </div>
+                      <p class="text_karusel2">Красивый, приятный магазин</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 text_karusel">
+                      <div class="zagolovok_karusel">
+                        <div class="otzivi_kartinka">
+                          <img src="source/files/отзывы/аватар м.png" alt="">
+                        </div>
+                        <h2 class="zagolovok_karusel2">
+                          <strong>William</strong>
+                        </h2>
+                      </div>
+                      <p class="text_karusel2">Отличная доставка</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <button class="carousel-control-prev ukazatel_karusel1" type="button"
+              data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon ukazat_left" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next ukazatel_karusel2" type="button"
+              data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon ukazat_right" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Конец блока Отзывы -->
+
+  <!-- Нижний колонтитул -->
+  <div class="colontitul_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 menu_block">
+          <h2 class="vagnii_text">Важная информация</h2>
+          <div class="colontitul_menu">
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="okompanii.html">О компании</a></li>
+              <li><a href="#">Недавние мероприятия</a></li>
+              <li><a href="#">Недавние события</a></li>
+              <li><a href="#">Присоединяйтесь к нам</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <h2 class="vagnii_text">Социальные сети</h2>
+          <div class="colontitul_menu">
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Linkedin</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Youtube</a></li>
+              <li><a href="#">Pinterest</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <h2 class="vagnii_text">Позвоните или напишите нам</h2>
+          <p id="colontitul_text_iak" class="colontitul_text">тел: +7 (777) 777 - 77 - 77</p>
+          <div class="colontitul-group">
+            <input type="text1" class="colontitul_control" placeholder="текст">
+            <div class="colontitul_group2">
+              <button class="colontitul_group_text">Отправить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Конец блока Нижний колонтитул -->
+
+  <!-- Авторские права -->
+  <div class="Avtorprava">
+    Copyright 2024 All Right Reserved By
+  </div>
+  <!-- Конец блока Авторские права -->
+
+  <!-- Java scripts -->
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

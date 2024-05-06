@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="source/style/mycss.css">  
+  <link rel="apple-touch-icon" sizes="180x180" href="source/files/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="source/files/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="source/files/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="source/files/favicon_io/site.webmanifest">
+  <title>Связаться с нами</title>
+</head>
+
+<body>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="index.html">Главная</a>
+    <a href="okompanii.html">Компания</a>
+    <a href="galary.html">Галерея</a>
+    <a href="otzivi.html">Отзывы</a>
+    <a href="contacts.html">Контакты</a>
+  </div>
+
+  <div id="main">
+    <!-- Главная страница -->
+    <div class="header_section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4">            
+          </div>
+
+          <div class="col-sm-4">
+            <div class="name">
+              <img src="source/files/название.png" alt="name">
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="elements_3">
+              <div class="levii">
+
+                <button onclick="document.getElementById('id01').style.display='block'" class="login">Войти</button>
+
+                <div id="id01" class="modal">
+
+                  <form class="modal-content animate" action="/action_page.php">
+
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                      title="Close Modal">×</span>
+
+
+                    <div class="container">
+
+                      <label for="uname" class="username"><b>Логин</b></label>
+                      <input type="text" placeholder="Введите логин" name="uname" required>
+
+                      <label for="psw" class="username"><b>Пароль</b></label>
+                      <input type="password" placeholder="Введите пароль" name="psw" required>
+
+                      <button type="submit" class="login1">Войти</button>
+                      <label class="remember">
+                        <input type="checkbox" checked="checked" name="remember"> Запомнить
+                      </label>
+                    </div>
+
+                    <div class="container_niz" style="background-color:#f1f1f1">
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">Отмена</button>
+                      <span class="psw">Забыли <a href="#">пароль?</a></span>
+                    </div>
+                  </form>
+                </div>
+
+
+
+              </div>
+
+              <div class="srednii">
+                <button onclick="document.getElementById('id02').style.display='block'"
+                  class="registration">Регистрация</button>
+
+                <div id="id02" class="modal2">
+                  <span onclick="document.getElementById('id02').style.display='none'" class="close2"
+                    title="Close Modal">×</span>
+                  <form class="modal-content2 animate" action="/action_page.php">
+                    <div class="container">
+                      <h1>Регистрация</h1>
+                      <p>Пожалуйста, заполните эту форму, чтобы создать учетную запись.</p>
+                      <hr>
+                      <label for="email"><b>Логин</b></label>
+                      <input type="text2" placeholder="Введите логин" name="email" required>
+
+                      <label for="psw"><b>Пароль</b></label>
+                      <input type="password2" placeholder="Введите пароль" name="psw" required>
+
+                      <label for="psw-repeat"><b>Повторить Пароль</b></label>
+                      <input type="password2" placeholder="Повторить пароль" name="psw-repeat" required>
+
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить
+                      </label>
+
+                      <p>Создавая учетную запись, Вы соглашаетесь с нашими <a href="#"
+                          style="color:dodgerblue">Условиями и Конфиденциальностью</a>.</p>
+
+                      <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('id02').style.display='none'"
+                          class="cancelbtn2">Отмена</button>
+                        <button type="submit" class="signupbtn">Регистрация</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+              </div>
+
+              <div class="pravii">
+                <div class="knopka">
+                  <span style="cursor: pointer; " onclick="openNav()"><img src="source/files/burger.png"
+                      alt="burger"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banrs">
+        <div class="container">          
+        </div>
+      </div>
+    </div>
+  
+  <!-- Главная страница конец блока -->  
+
+  <!-- Контакты -->
+  <div class="contacts_section" style="padding-top: 100px;">
+    <div class="container">
+      <h1 class="contact_text">
+        <strong>Связаться с нами</strong>
+      </h1>
+    </div>
+    <div class="contacts_main">
+      <div class="vvod_section">
+        <div class="email_box">
+          <div class="input_main">
+
+            <div class="container">
+              <form action="action_page.php">
+
+                <div class="form-group">
+                  <input type="text" class="email_pismo" name="name" placeholder="Имя">
+                </div>
+
+                <div class="form-group">
+                  <input type="text" class="email_pismo" name="name" placeholder="Email">
+                </div>
+
+                <div class="form-group">
+                  <input type="text" class="email_pismo" name="telefone" placeholder="Телефон">
+                </div>
+
+                <div class="form-group">
+                  <textarea class="message_pismo" name="message" placeholder="Напишите.." rows="5"
+                    id="comment"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="send_pismo">
+              <button type="button" class="main_pismo">
+                <a href="#">Отправить</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+  <!-- Контакты конец блока -->
+
+  
+  <!-- Нижний колонтитул -->
+  <div class="colontitul_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 menu_block">
+          <h2 class="vagnii_text">Важная информация</h2>
+          <div class="colontitul_menu">
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Недавние мероприятия</a></li>
+              <li><a href="#">Недавние события</a></li>
+              <li><a href="#">Присоединяйтесь к нам</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <h2 class="vagnii_text">Социальные сети</h2>
+          <div class="colontitul_menu">
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Linkedin</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Youtube</a></li>
+              <li><a href="#">Pinterest</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <h2 class="vagnii_text">Позвоните или напишите нам</h2>
+          <p id="colontitul_text_iak" class="colontitul_text">тел: +7 (777) 777 - 77 - 77</p>
+          <div class="colontitul-group">
+            <input type="text1" class="colontitul_control" placeholder="текст">
+            <div class="colontitul_group2">
+              <button class="colontitul_group_text">Отправить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <!-- Конец блока Нижний колонтитул -->
+
+  <!-- Авторские права -->
+  <div class="Avtorprava">
+    Copyright 2024 All Right Reserved By
+  </div>
+  <!-- Конец блока Авторские права -->
+</div>
+  <!-- Java scripts -->
+</div>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
